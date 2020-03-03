@@ -1,24 +1,52 @@
 {
-	"name": "VSC-Snippets",
-	"displayName": "JK Visual Studio Code Snippets ",
-	"description": "Visual Studio Code Snippets ",
-	"version": "0.0.1",
-	"publisher": "ms-vscode",
-	"author": {
-    	"name": "jayadevac"
-  	},
-	"engines": {
-		"vscode": "^1.28.0"
+ 	"Import component" : { 
+		"prefix": "n-imc",
+		"scope": "javascript,typescript",
+		"body": [
+			 "import { $1Component } from './$2/$2.component';",
+			"$3"
+		 ],
+		"description": "Class Function"
 	},
-	"categories": [
-		"Snippets"
-	],
-	"contributes": {
-		"snippets": [
-			{
-				"language": "javascript,typescript",
-				"path": "./snippets/snippets-jt.json"
-			}
-		]
-	}
+	"Export class": { 
+		"prefix": "n-ec",
+		"scope": "javascript,typescript",
+		"body": [
+			 "export class $1Module { }",
+			"$3"
+		 ],
+		"description": "export Class Function"
+	},
+	"Import Module": { 
+		"prefix": "n-imm",
+		"scope": "javascript,typescript",
+		"body": [
+			 "import { $1 } from './$2/$2.module';",
+			"$3"
+		 ],
+		"description": "Class Function"
+	},
+	"Import Class": { 
+		"prefix": "n-epc",
+		"scope": "javascript,typescript",
+		"body": [
+			 "export class $1 { }",
+			"$3"
+		 ],
+		"description": "export Class Function"
+	},
+
+
+
+	"btn class": { 
+		"prefix": "btnc",
+		"scope": "html",
+		"body": [
+			 "class=\"btn btn-primary\"", 
+		 ],
+		"description": "export Class Function"
+	},
+
+
+
 }

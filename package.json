@@ -1,9 +1,12 @@
 {
-	"name": "VSC-Snippets",
+	"name": "vsc-snippets",
 	"displayName": "JK Visual Studio Code Snippets ",
 	"description": "Visual Studio Code Snippets ",
 	"version": "0.0.1",
-	"publisher": "jayadevac",
+	"publisher": "ms-vscode",
+	"author": {
+    	"name": "jayadevac"
+  	},
 	"engines": {
 		"vscode": "^1.28.0"
 	},
@@ -14,7 +17,7 @@
 		"snippets": [
 			{
 				"language": "javascript,typescript",
-				"path": "./snippets.json"
+				"path": "./snippets/snippets-jt.json"
 			}
 		]
 	}
