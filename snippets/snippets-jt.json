@@ -47,6 +47,50 @@
 		"description": "export Class Function"
 	},
 
+	"Set route path": {
+		"scope": "javascript,typescript",
+		"prefix": "rp",
+		"body": ["{path: '$1', component: $2},","$3"],
+		"description": "Set {path: '' }route path"
+
+	},
+	"Import Component":{
+		"scope": "javascript,typescript",
+		"prefix": "ic",
+		"body": ["import { $1Component } from './$2/$2.component';","$3"],
+		"description": "Import {} from Component"
+	},
+	"function template":{
+		"prefix": "fnc",
+		"body": [
+			"$1(){",
+			"\t$2",
+			"}",
+		],
+		"description": "Function skelton"
+	},
+	"route navigate":{
+		"prefix": "rnv",
+		"body": "this.router.navigateByUrl('$1', {state: $2});",
+		"description": "router.navigateByUrl"
+	},
+
+	//HTML code
 
 
+	"ngfor":{
+		"scope": "html",
+		"prefix": "ngfor",
+		"body":"*ngFor=\"let $1 of $2\"",
+		"description": "*ngFor"
+	},
+	"button with spiner":{
+		"scope": "html",
+		"prefix": "bws",
+		"body": ["<button [disabled]=\"loading\" class=\"btn btn-primary\">",
+			"<span *ngIf=\"loading\" class=\"spinner-border spinner-border-sm mr-1\"></span>",
+			"$1",
+			"</button>"],
+		"description": "Button with spinner"
+	}
 }
